@@ -1,12 +1,8 @@
 import { FC } from "react";
+import { Product } from "../types";
 
 type ProductCardProps = {
-  product: {
-    title: string;
-    category: string;
-    image: string;
-    price: number;
-  };
+  product: Product
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
